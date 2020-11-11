@@ -1,0 +1,81 @@
+#page-service {
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.service-details {
+    width: 700px;
+    margin: 6.4rem auto;
+    background: #fff;
+    border: 1px solid wheat;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.service-details > img {
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 16px 48px 0;
+}
+.images button {
+    border: 0;
+    background: none;
+    border-radius: 2rem;
+
+    height: 8.8rem;
+    cursor: pointer;
+
+    overflow: hidden;
+    
+}
+.images button img  {
+    width: 100%;
+    height: 8.8rem;
+    object-fit: cover;
+}
+.service-details-content {
+    padding: 8rem;
+}
+.service-details-content h1 {
+    color: rgb(1, 122, 92);
+    font-size: 5.4rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+.service-details-content p {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: rgb(0, 155, 116);
+    margin-top: 2.4rem;
+}
+.service-details-content hr {
+    width: 100%;
+    line-height: 1.5rem;
+    color: rgb(16, 194, 149);
+}
+
+.primary-button {
+    margin-top: 6.4rem;
+    width: 100%;
+    height: 6.4rem;
+    border: 0;
+    cursor: pointer;
+    background:  rgb(16, 194, 149);
+    border-radius: 2rem;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.primary-button img {
+    margin-right: 1.6rem;
+}

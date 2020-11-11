@@ -1,0 +1,37 @@
+aside.sidebar {
+    position: fixed;
+    height: 100%;
+    padding: 32px 24px;
+
+    background: linear-gradient(329.54deg, rgb(96, 243, 121) 0%, rgb(54, 141, 69)100%); ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside.sidebar img{
+    width: 80px;
+    height: 60px;
+    flex-direction: column;
+}
+
+
+aside.sidebar footer button {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    background: rgb(54, 141, 69);
+    border-radius: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: inherit;
+    justify-content: center;
+}
+aside.sidebar footer button img{
+    width: 32px;
+    /* position: inherit; */
+    align-self: center;
+    
+}
+.with-sidebar {
+    padding-left: 110px;
+}

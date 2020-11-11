@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre seu serviço |AgroMazing</title>
+
+    <!-- Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <link rel="stylesheet" href="../../Public/css/main.css">
+    <link rel="stylesheet" href="../../Public/css/animation.css">
+    <link rel="stylesheet" href="../../Public/css/create-service.css">
+    <link rel="stylesheet" href="../../Public/css/sidebar.css">
+    <link rel="stylesheet" href="../../Public/css/map.css">
+    <link rel="stylesheet" href="../../Public/css/forms.css">
+
+    <link rel="icon" href="../../Public/assets/agromazing-icon.jpeg">
+
+</head>
+
+<body>
+    <div id="page-create-service">
+        <aside class="animate-right sidebar">
+            <img src="../../Public/assets/LOGO-SEM-NOME-2.png" alt="Logo">
+            <footer>
+                <button onclick="history.back()">
+                    <img src="../../Public/assets/seta-fina2.svg" alt="Voltar">
+                </button>
+            </footer>
+        </aside>
+        <main class="animate-appear with-sidebar">
+            <form action="save-service" method="POST">
+                <fieldset>
+                    <legend>Informações</legend>
+                    <div class="map-container">
+                        <div id="mapid"></div>
+                        <input type="hidden" name="lat">
+                        <input type="hidden" name="lng">
+
+                        <footer>
+                            <a href="#" id="select-point">Adicione uma localização</a>
+                        </footer>
+
+                    </div>
+                    <div class="input-block">
+                        <label for="about"> Nome</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="about">Descição pessoal</label>
+                        <textarea id="about" name="about" type="text" required></textarea>
+                    </div>
+                    <div class="input-block">
+                        <label for="about">Número para contato</label>
+                        <input id="whatsapp" name="whatsapp" type="text" required>
+                    </div>
+                    <div class="input-block images">
+                        <label for="images">Fotos</label>
+                        <div class="images-upload" id="images">
+                            <div class="new-upload">
+                                <input  name="images" placeholder="Cole a foto aqui" required type="file">
+                                <span onClick="deleteField(event)">
+                                    <img src="../../Public/assets/trash.svg" alt="deletar">
+                                </span>
+                            </div>
+                        </div>
+                        <button onClick="addPhotoField()" 
+                        type="button">
+                            <img src="../../Public/assets/add.svg" alt="Adicionar">
+                        </button>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Instruçoes de visitas</legend>
+                    <div class="input-block">
+                        <label for="instructions">Descreva como pode ser feito a consultoria</label>
+                        <textarea name="instructions" id="instructions" required></textarea>
+                    </div>
+                    <div class="input-block">
+                        <label for="open_hours">Horário de trabalho</label>
+                        <input id="open_hours" name="open_hours" required>
+                    </div>
+                    <div class="input-block">
+                        <button type="button" disabled class="primary-button">Confirmar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    <script src="../page-create-service.js"></script>
+</body>
+
+</html>

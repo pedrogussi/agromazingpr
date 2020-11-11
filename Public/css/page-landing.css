@@ -1,0 +1,90 @@
+#page-landing {
+    background: linear-gradient(329.54deg, rgb(96, 243, 121) 0%, rgb(54, 141, 69)100%);
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+
+}
+#container {
+    margin: auto;
+    width: min(90%, 112rem);
+}
+#logo {
+    width: 20rem;
+    height: 18rem;
+    
+}
+.location, h1, .visit p {
+    height: 14vh;
+}
+main h1 {
+    font-size: clamp(4rem, 8vw, 8.4rem);
+
+}
+.visit a img {
+    width: 6rem;
+    flex: none;
+}
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background:  rgb(54, 141, 69);
+
+    border: none;
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    
+}
+
+@media (min-width: 760px) {
+    #container {
+        padding: 5rem 2rem;
+        background: url(../../Public/assets/display3.png) no-repeat 90% bottom;
+        background-size: clamp(50rem, 60vw, 62rem );
+        
+    }
+    header {
+      display: flex;  
+      align-items: center;
+      justify-content: space-between;
+      
+    }
+    .location, h1, .visit p{
+        height: initial;
+        text-align: initial;
+    }
+    .location{
+        font-size: 2.4rem;
+        line-height: 1.5;
+        text-align: right;
+    }
+    main h1 {
+        font-weight: bold;
+        font-size: 69px;
+        line-height: .88;
+        margin: clamp(10%, 11vh, 12%) 0 5rem;
+        width:  min(380px, 100%);
+
+    }
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .visit p {
+        font-size: 3.0rem;
+        line-height:1.5;
+        width: clamp(20rem, 20vw, 30rem)
+    }
+    .visit a {
+        margin: initial;
+    }
+
+
+}

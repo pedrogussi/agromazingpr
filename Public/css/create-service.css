@@ -1,0 +1,64 @@
+#page-create-service {
+    display: flex;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.map-container {
+    margin: 0 0 4rem;
+}
+.map-container .leaflet-container {
+    border-radius: 20px 20px 0 0;
+}
+.map-container footer {
+    background: #f5f5f5;
+    border-radius: 0 0 20px 20px;
+}
+.button-select{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.button-select button {
+    height: 6.4rem;
+    background: #f5f5f5;
+    border: 1px solid #d3e2e5;
+    color: #3f8f67;
+    cursor: pointer;
+}
+.button-select button.active {
+    background: #ffff;
+    border: 1px solid #d3e2e5;
+    color: #3f8f67;
+}
+.button-select button:first-child {
+    border-radius: 2rem 0 0 2rem;
+}
+.button-select button:last-child{
+    border-radius: 0 2rem 2rem 0;
+}
+
+.new-upload{
+    position: relative;
+}
+.new-upload span{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    background: #ffff;
+    border: 1px solid #d3e2e5;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 10px;
+    padding: .6rem;
+
+    cursor: pointer;
+
+}
+.new-upload span img{
+    height: 20px;
+    width: 20px;
+}
+.new-upload + .new-upload{
+    margin-top: 2.4rem;
+}

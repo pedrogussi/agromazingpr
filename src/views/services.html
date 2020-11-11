@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Próximos a você |AgroMazing</title>
+
+    <!-- Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="../../Public/css/main.css">
+    <link rel="stylesheet" href="../../Public/css/animation.css">
+    <link rel="stylesheet" href="../../Public/css/page-services.css">
+    <link rel="icon" href="../../Public/assets/agromazing-icon.jpeg">
+
+</head>
+<body>
+    <div id="page-services">
+        <aside class="animate-right">
+            <header>
+                <h2>Procurando por implementos ou consultorias?</h2>
+                <p>Veja o que temos disponível em sua localidade</p>
+
+            </header>
+            <footer>
+                <img src="../../Public/assets/LOGO-SEM-NOME-2.png" alt="">
+                <strong>AgroMazing</strong>
+                <p>Solução Integrada</p>
+            </footer>
+        </aside>
+        <div id="mapid" class="animate-appear"></div>
+        <div class="services">
+            
+            <span hidden>
+            </span>
+            <a href="../views/create-service.html" class="create-service"  title="Cadastre-se">
+                <img src="../../Public/assets/add.svg" alt="Cadastro">
+            </a>
+        </div>
+        <script src="../services.js"></script>
+    </div>
+    
+</body>
+</html>

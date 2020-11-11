@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços AgroMazing</title>
+
+    <!-- Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="../../Public/css/main.css">
+    <link rel="stylesheet" href="../../Public/css/animation.css">
+    <link rel="stylesheet" href="../../Public/css/page-service.css">
+    <link rel="stylesheet" href="../../Public/css/sidebar.css">
+    <link rel="stylesheet" href="../../Public/css/map.css">
+
+    <link rel="icon" href="../../Public/assets/agromazing-icon.jpeg">
+
+
+</head>
+<body>
+    <div id="page-service">
+        <aside class="animate-right sidebar">
+            <img id="logo" src="../../Public/assets/LOGO-SEM-NOME-2.png" alt="logo">
+            <footer>
+                <button onclick="history.back()">
+                    <img class="seta" src="../../Public/assets/seta-fina2.svg" alt="Back">
+                </button>
+            </footer>
+        </aside>
+        <main class="animate-appear with-sidebar">
+            <div class="service-details">
+                <img src="../../Public/assets/logo-com-fundo.png" alt="service">
+                <div class="images">
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="../../Public/assets/logo-com-fundo.png" alt="logo">
+                    </button>
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="../../Public/assets/WhatsApp Image 2020-10-25 at 11.07.34.jpeg" alt="logo">
+                    </button>
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="../../Public/assets/vini.jpeg" alt="logo">
+                    </button>
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="../../Public/assets/ana.jpeg" alt="logo">
+                    </button>
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="../../Public/assets/laila.jpeg" alt="logo">
+                    </button>
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="../../Public/assets/slide16-9.png" alt="logo">
+                    </button>
+                </div>
+                <div class="service-details-content">
+                    <h1>AgroMazing Serviços</h1>
+                    <p>Somos a AgroMazing, e estamos aqui para revolucionar o mundo agrícola como conhecemos</p>
+                    <div class="map-container">
+                        <div onclick="selectImage(event)" id="mapid"></div>
+                        <span></span>
+                        <footer>
+                            <a href="https://maps.google.com/mobile?q=-23.7594344,-53.3092236&z=15">
+                            Veja a melhor rota para o local
+                            </a>
+                        </footer>
+                    </div>
+                    <hr/>
+                    <h2> Horário de Atendimento</h2>
+                    <p>Segunda a sexta</p>
+                    <a href="https://api.whatsapp.com" target="blank"
+                    class="primary-button"
+                    type="button"
+                    >
+                    <img src="../../Public/assets/iconmonstr-whatsapp-1.svg" alt="Zap">
+                    Entre em contato !!!
+                    </a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="../service.js"></script>
+</body>
+</html>
